@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Form Đăng ký Thông tin Cá nhân</h2>
+
+    <form action="#" method="post">
+        <label for="name">Họ và tên:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Số điện thoại:</label>
+        <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}">
+
+        <label>Giới tính:</label>
+        <div class="gender-group">
+            <input type="radio" id="male" name="gender" value="Nam" required>
+            <label for="male">Nam</label><br>
+
+            <input type="radio" id="female" name="gender" value="Nữ">
+            <label for="female">Nữ</label><br>
+
+            <input type="radio" id="other" name="gender" value="Khác">
+            <label for="other">Khác</label>
+        </div>
+
+        <input type="submit" value="Đăng ký">
+    </form>
+</body>
+
+</html>
